@@ -63,7 +63,7 @@ With the introduction of Decree 13, Vietnamese businesses (especially in **Finan
 ### Legal RAG Workflow
 
 <!-- 📌 REPLACE WITH YOUR WORKFLOW IMAGE -->
-![Legal RAG Workflow](https://github.com/tylevan/legal-rag/blob/main/images/workflow.png)
+![Legal RAG Workflow](https://github.com/tylevan/tylevan.github.io/blob/main/images/workflow.png)
 
 ## Key Features ⚙️
 
@@ -100,7 +100,7 @@ This project applies advanced RAG techniques to ensure high accuracy:
 
 <!-- 📌 REPLACE WITH ACTUAL SCREENSHOT -->
 <p align="center">
-  <img src="https://github.com/tylevan/legal-rag/blob/main/images/chat-interface-demo.png" alt="Chat Interface" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/images/chat-interface-demo.png" alt="Chat Interface" width="80%"/>
 </p>
 
 ### 💬 Example Conversation
