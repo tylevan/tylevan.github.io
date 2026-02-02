@@ -7,7 +7,7 @@
 <p align="center">
   <strong>AI-Powered Legal Assistant using Retrieval-Augmented Generation</strong>
   <br/>
-  <em>Query Vietnamese Decree 13/2023/NĐ-CP on Personal Data Protection</em>
+  <em>Query Vietnamese Decree 13/2023/NĐ-CP and Law No. 91/2025/QH15 of the National Assembly on Personal Data Protection</em>
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 
 ### Why This Project Matters
 
-With the introduction of Decree 13, Vietnamese businesses (especially in **Finance**, **Healthcare**, and **E-commerce**) must comply with strict data protection regulations. However:
+With the introduction of Decree 13/2023/NĐ-CP and Law No. 91/2025/QH15 , Vietnamese businesses (especially in **Finance**, **Healthcare**, and **E-commerce**) must comply with strict data protection regulations. However:
 
 | Challenge | Solution |
 |-----------|----------|
