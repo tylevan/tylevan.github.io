@@ -160,17 +160,17 @@ The agent is hardened against prompt injection attacks:
 
 <!-- 📌 REPLACE WITH ACTUAL SCREENSHOTS -->
 <p align="center">
-  <img src="docs/screenshots/home-assessment.png" alt="Home - Credit Assessment" width="80%"/>
-  <br/><em>Home — Submit loan application and receive AI assessment</em>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/home.png" alt="Home - Credit Assessment" width="80%"/>
+  <br/><em>Home - Submit loan application and receive AI assessment</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/reasoning-trail.png" alt="Reasoning Trail" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/reason_trail.png" alt="Reasoning Trail" width="80%"/>
   <br/><em>Reasoning Trail — Step-by-step audit of AI decision process</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/dashboard.png" alt="Dashboard Analytics" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/dashboard.png" alt="Dashboard Analytics" width="80%"/>
   <br/><em>Dashboard — Assessment analytics with filters and charts</em>
 </p>
 
