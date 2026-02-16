@@ -53,7 +53,7 @@ Traditional credit underwriting in Vietnamese banks faces real operational chall
 - **AI/ML Engineers** studying LangGraph agentic patterns with Human-in-the-Loop
 - **Product Managers** building a case for AI adoption in banking workflows
 
----
+
 
 ## Agentic Workflow 💡
 
@@ -84,7 +84,7 @@ The agent **must complete all 5 steps** before making a decision (unless an auto
 > [!IMPORTANT]
 > **Guardrails Node**: After the agent makes its decision, a `validate_decision` node independently verifies the decision against policy rules. If the LLM's decision conflicts with the data (e.g., approving a bad-debt case), the guardrails **override the LLM** automatically.
 
----
+
 
 ## Key Features ⚙️
 
@@ -102,7 +102,7 @@ The agent **must complete all 5 steps** before making a decision (unless an auto
 > [!NOTE]
 > **Anti-Hallucination Design**: The AI agent is **not allowed to invent numbers**. Every data point (CIC score, DTI, income) must come from tool calls. The system prompt explicitly forbids fabrication.
 
----
+
 
 ## Why This Agent is Robust 🛡️
 
@@ -152,11 +152,10 @@ The agent is hardened against prompt injection attacks:
 > [!CAUTION]
 > The `validate_decision` node acts as the **last line of defense**. Even if prompt injection somehow tricks the LLM into saying "APPROVED", the guardrails node independently checks the reasoning trail and **overrides** the decision based on hard policy rules.
 
----
 
-## Demo 🎬
 
-### 📱 Screenshots
+## 📱 Screenshots
+
 
 <!-- 📌 REPLACE WITH ACTUAL SCREENSHOTS -->
 <p align="center">
@@ -220,7 +219,7 @@ The system enforces these configurable thresholds:
 | ≥ 650 | Khá | 16%/year | 0.8x |
 | ≥ 600 | Trung bình | 18%/year | 0.6x |
 
----
+
 
 ## Tech Stack 🛠️
 
@@ -236,7 +235,7 @@ The system enforces these configurable thresholds:
 | **Customer Data** | Pandas + CSV (80K records) | Simulated core banking data |
 | **Deployment** | Docker Compose, Google Cloud Run | Production-ready containerization |
 
----
+
 
 ## Architecture 🏗️
 
@@ -244,7 +243,7 @@ The system enforces these configurable thresholds:
   <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/architecture.png" width="80%"/>
 </p>
 
----
+
 
 ## API Endpoints 📡
 
@@ -260,7 +259,7 @@ The system enforces these configurable thresholds:
 | `GET` | `/api/v1/dashboard/stats` | Assessment statistics |
 | `GET` | `/api/v1/dashboard/assessments` | Assessment list with filters |
 
----
+
 
 ## How to Test 🧪
 
@@ -303,7 +302,7 @@ After an assessment, use the **Chat** panel to ask follow-up questions:
 | Bad debt customer | Find ID with risk_score ≥ 0.6 | Auto-reject at CIC step |
 | Borderline DTI | High loan + low income | REVIEW → Human-in-the-Loop |
 
----
+
 
 ## About 👨‍💻
 
