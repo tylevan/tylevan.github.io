@@ -28,7 +28,7 @@
   <a href="#contact">Contact</a>
 </p>
 
----
+
 
 ## Introduction 🚀
 
@@ -166,12 +166,12 @@ The agent is hardened against prompt injection attacks:
 
 <p align="center">
   <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/reason_trail.png" alt="Reasoning Trail" width="60%"/>
-  <br/><em>Reasoning Trail — Step-by-step audit of AI decision process</em>
+  <br/><em>Reasoning Trail - Step-by-step audit of AI decision process</em>
 </p>
 
 <p align="center">
   <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/dashboard.png" alt="Dashboard Analytics" width="60%"/>
-  <br/><em>Dashboard — Assessment analytics with filters and charts</em>
+  <br/><em>Dashboard - Assessment analytics with filters and charts</em>
 </p>
 
 ### 💬 Example Assessment Flow
