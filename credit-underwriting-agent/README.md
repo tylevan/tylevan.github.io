@@ -160,17 +160,17 @@ The agent is hardened against prompt injection attacks:
 
 <!-- 📌 REPLACE WITH ACTUAL SCREENSHOTS -->
 <p align="center">
-  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/home.png" alt="Home - Credit Assessment" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/home.png" alt="Home - Credit Assessment" width="60%"/>
   <br/><em>Home - Submit loan application and receive AI assessment</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/reason_trail.png" alt="Reasoning Trail" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/reason_trail.png" alt="Reasoning Trail" width="60%"/>
   <br/><em>Reasoning Trail — Step-by-step audit of AI decision process</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/dashboard.png" alt="Dashboard Analytics" width="80%"/>
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/dashboard.png" alt="Dashboard Analytics" width="60%"/>
   <br/><em>Dashboard — Assessment analytics with filters and charts</em>
 </p>
 
@@ -240,42 +240,9 @@ The system enforces these configurable thresholds:
 
 ## Architecture 🏗️
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                     FRONTEND (React 19)                      │
-│  ┌──────────┐  ┌──────────────┐  ┌────────────────────────┐ │
-│  │ LoanForm │  │ ChatInterface│  │ Dashboard (Recharts)   │ │
-│  └─────┬────┘  └──────┬───────┘  └───────────┬────────────┘ │
-│        │               │                      │              │
-└────────┼───────────────┼──────────────────────┼──────────────┘
-         │               │                      │
-    ─────┼───────────────┼──────────────────────┼───── REST API
-         │               │                      │
-┌────────┼───────────────┼──────────────────────┼──────────────┐
-│        ▼               ▼                      ▼              │
-│   POST /assess    POST /chat         GET /dashboard/*        │
-│                                                              │
-│                  BACKEND (FastAPI)                            │
-│  ┌────────────────────────────────────────────────────────┐  │
-│  │              LangGraph Agent (State Machine)           │  │
-│  │                                                        │  │
-│  │  ┌─────┐    ┌───────┐    ┌──────────┐    ┌──────────┐ │  │
-│  │  │ LLM │◄──►│ Tools │───►│Scratchpad│───►│ Validate │ │  │
-│  │  └─────┘    └───┬───┘    └──────────┘    └────┬─────┘ │  │
-│  │                 │                              │       │  │
-│  │    ┌────────────┼────────────┐          ┌──────▼─────┐ │  │
-│  │    │            │            │          │Human Review│ │  │
-│  │    ▼            ▼            ▼          └────────────┘ │  │
-│  │ Customer    CIC Report   Calculators                   │  │
-│  │   Info      (Score/Debt) (PMT/DTI/Max)                 │  │
-│  └────────────────────────────────────────────────────────┘  │
-│                         │                                    │
-│              ┌──────────▼──────────┐                         │
-│              │ Supabase PostgreSQL │  Assessment History      │
-│              │  (SQLite fallback)  │                          │
-│              └─────────────────────┘                         │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="https://github.com/tylevan/tylevan.github.io/blob/main/credit-underwriting-agent/images/architecture.png" width="80%"/>
+</p>
 
 ---
 
