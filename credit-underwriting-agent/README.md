@@ -46,15 +46,6 @@ Traditional credit underwriting in Vietnamese banks faces real operational chall
 | ⚠️ Edge cases slip through without review | **Human-in-the-Loop** flags borderline DTI cases |
 | 📊 No centralized tracking of assessment history | **Dashboard** with real-time analytics and filters |
 
-### Who Should Use This?
-
-- **Banks & Financial Institutions** looking to automate retail lending
-- **Digital Transformation teams** implementing AI in credit operations
-- **AI/ML Engineers** studying LangGraph agentic patterns with Human-in-the-Loop
-- **Product Managers** building a case for AI adoption in banking workflows
-
-
-
 ## Agentic Workflow 💡
 
 ### What Makes This "Agentic"?
